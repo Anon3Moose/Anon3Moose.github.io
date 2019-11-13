@@ -1,3 +1,4 @@
+
 /* Responsive Nav Bar */
 *{
   margin: 0px;
@@ -152,55 +153,6 @@ img{
 	animation: border 10s ease-in-out infinite;
 	transform:translateX(-50px) translateY(-50px);
 }
-@keyframes border {
-  0%, 100% {
-    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-  }
-  50% {
-    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-  }
-}
 
-.box:after{
-	animation-delay: -4s;
-	background-color: #000000;
-	clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-}
-.box:before {
-	background-color: #e67e22;
-	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-}
 
-.box:hover:after{
-	animation-delay: -0.3s;
-}
-.box:hover:before, .box:hover:after {
 
-          animation-duration: 0.9s;
-}
-
-.s-m{
-  margin: 310px auto;
-  justify-content: space-around;
-  display: flex;
-  max-width: 700px;
-}
-.s-m a{
-  text-decoration: none;
-  font-size: 50px;
-  color: #2d2d2d;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  transition: 0.4s all;
-  line-height: 58px;
-  cursor: pointer;
-  background: #000000;
-  border-radius: 50%;
-}
-.s-m a:hover{
-  transform: scale(3);
-  color: #e67e22
-}
