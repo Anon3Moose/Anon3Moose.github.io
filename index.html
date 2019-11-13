@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Jared Acosta | About Me</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Jared Acosta - Home</title>
 </head>
-<!--(updated nav bar test) <nav>
+
+<body>
+  <nav>
     <div class="logo">
-      <h4>Jared Acosta</h4>
     </div>
     <ul class="nav-links">
       <li>
-        <a href="index.html">About</a>
+        <a href="index.html">Home</a>
       </li>
       <li>
         <a href="portfolio.html">Portfolio</a>
@@ -23,110 +27,20 @@
         <a href="contact.html">Contact</a>
       </li>
     </ul>
-    <di class="burger">
+    <div class="burger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
-</div>
-</nav> -->
-
-<body>
-  <div class="content-container">
-    <div class="nav-container">
-      <nav class="nav">
-        <header class="myName">
-          <h1>Jared Acosta</h1>
-        </header>
-        <ol>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ol>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
     </div>
-    <main class="content">
-      <h2 class="page-title">About Me</h2>
-      <hr>
-      <figure>
-        <img src="https://i.redd.it/oiaflhcj23n11.png" img height="150px" img width="150px" alt="Photo of An Absolute Unit">
-      </figure>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, turpis in semper aliquet, felis eros volutpat odio, eget fermentum sapien leo eu sapien. Nulla eget libero magna. Pellentesque bibendum, lacus id commodo auctor, ante tellus rhoncus nulla, et vulputate dolor diam tincidunt risus. Nam a felis sit amet orci volutpat elementum. Sed malesuada, leo ut ornare aliquet, elit ipsum fringilla ligula, id pulvinar nunc turpis vitae magna. Praesent in elit vitae turpis accumsan pharetra. Curabitur eget magna nec ex fringilla dictum. Cras eget tellus vitae quam aliquam gravida sit amet eu velit. Cras ante tortor, cursus ac porttitor at, luctus id nisl. Donec vel nisl leo. Aenean a purus porta, bibendum diam vel, interdum est. Duis pulvinar neque egestas augue blandit, at tristique leo commodo. Duis tincidunt arcu non nunc venenatis, nec tincidunt eros mollis. Ut sagittis augue sed ligula porta, ut pretium elit cursus. Ut a pretium metus.</p>
-    </main>
+  </nav>
+  <div class="box">
+    <img src="./assets/images/jmpfp.png" width="350px" length="350px">
   </div>
-  <footer class="footer">
-    
-<script>
-  // Fancy RGB footer I discovered how to make thanks to if else and arrays... plus google...
-var text="&copy; Definietly Copyright"
-var speed=80
-
-if (document.all||document.getElementById){
-  document.write('<span id="highlight">' + text + '</span>')
-  var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
-  }
-  else
-  document.write(text)
-  var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
-  var r=1
-  var g=1
-  var b=1
-  var seq=1
-  function changetext(){
-    rainbow="#"+hex[r]+hex[g]+hex[b]
-    storetext.style.color=rainbow
-  }
-  
-  // color changing sequence
-  function change(){
-  if (seq==6){
-   b--
-  if (b==0)
-    seq=1
-  }
-  if (seq==5){
-    r++
-  if (r==12)
-   seq=6
-  }
-  if (seq==4){
-   g--
-  if (g==0)
-   seq=5
-  }
-  if (seq==3){
-    b++
-  if (b==12)
-    seq=4
-  }
-  if (seq==2){
-    r--
-  if (r==0)
-    seq=3
-  }
-  if (seq==1){
-   g++
-  if (g==12)
-   seq=2
-  }
-  changetext()
-  }
-  function starteffect(){
-    if (document.all||document.getElementById)
-    flash=setInterval("change()",speed)
-    }
-    starteffect()
-</script>
-  </footer>
 </body>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+
 
 </html>

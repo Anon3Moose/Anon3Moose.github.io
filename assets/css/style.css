@@ -1,0 +1,184 @@
+/* Movie Site Project - CSS  */
+
+/* Responsive Nav Bar */
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #2d2d2d;
+}
+
+nav .logo{
+  position: absolute;
+}
+
+nav{
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: #e67e22;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-links li{
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: #000000;
+  text-shadow: #2d2d2d;
+  transition: all .4s ease;
+}
+.nav-links li:hover{
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  text-shadow: 5px 5px #2d2d2d;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #e67e22;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+   body{
+      overflow-x: hidden;
+   }
+  .nav-links{
+     position: absolute;
+     right: 0px;
+     height: 92vh;
+     top: 8vh;
+     background-color: #000;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+   display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-90deg) translate(-5px, -6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(-90deg) translate(-5px, -6px);
+}
+
+/* Clean and responsive search bar animations*/
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+/* box animation around graphic */
+ .box{
+	width: 350px; height: 350px;
+  background-color: #000000;
+  top: 30%;
+  left: 38%;
+  padding: 10px;
+	position: absolute;
+	box-shadow: 10px 10px 42px 0 rgb(0, 0, .75);
+}
+img{
+  position: absolute;
+}
+.box:after, .box:before{
+	mix-blend-mode:multiply;
+	filter:none;
+	z-index: -1;
+	content:'';
+	width:calc(100% + (50px * 2));
+	height:calc(100% + (50px * 2));
+	position: absolute;
+	display: block;
+	animation: border 10s ease-in-out infinite;
+	transform:translateX(-50px) translateY(-50px);
+}
+@keyframes border {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  }
+  50% {
+    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+  }
+}
+
+.box:after{
+	animation-delay: -4s;
+	background-color: #000000;
+	clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+}
+.box:before {
+	background-color: #e67e22;
+	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+}
+
+.box:hover:after{
+	animation-delay: -0.3s;
+}
+.box:hover:before, .box:hover:after {
+
+          animation-duration: 0.9s;
+}
