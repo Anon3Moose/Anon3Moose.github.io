@@ -288,14 +288,7 @@ body .button{
 body.show {
 	background-color: #000000;
 }
-/*
-.button:hover {
-	background-image: url('http://.com/img/codepen/savvy.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
+
 body .button2{
   top: 40%;
   left: 22%;
@@ -374,11 +367,3 @@ body .button2{
 body.show {
 	background-color: #000;
 }
-/*
-.button2:hover {
-	background-image: url('http://.com/img/codepen/savvy.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
